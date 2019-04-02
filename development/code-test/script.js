@@ -18,24 +18,24 @@ for (let i = 0; i < click.length; i++) {
     clickCount.push('clicked');
     if ( clickCount.length % 2 === 0 ) {
       // red
-      redSquares.push(i);
       if (event.target.classList.length === 4) {
         console.log('already clicked');
       } else {
         console.log('Move to clicked section');
         event.target.classList.add('isActive');
         click[i].style.backgroundColor ='#FF0000';
+        redSquares.push(i);
       }
       winLogicRed();
     } else {
       //yellow
-      yellowSquares.push(i);
       if (event.target.classList.length === 4) {
         console.log('already clicked');
       } else {
         console.log('Move to clicked section');
         event.target.classList.add('isActive');
         click[i].style.backgroundColor ='#FFFF00';
+        yellowSquares.push(i);
       }
       winLogicYellow();
     }
