@@ -12,12 +12,57 @@ il {
 }
 
 .box {
-  height: 100px;
-  width: 100px;
-  background-color: blue;
+  height: 228px;
+  width: 228px;;
+
 }
 
 .top, .middle, .bottom {
   display: flex;
   flex-direction: row;
+  padding-left: 38%;
+}
+
+#container {
+  height: 100%;
+  width:100%;
+}
+
+.Xpix {
+
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+
+    -webkit-animation: spin 4s infinite linear;
+}
+
+@-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+
+.Ypix {
+
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 4s infinite linear;
+}
+
+@-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+
+.X {
+  background-image: url("./images/X-TicTacToe.png");
+  height: 228px;
+  width: 228px;
+}
+
+.O {
+  background-image: url("./images/O.jpeg");
+  height: 228px;
+  width: 228px;
 }
